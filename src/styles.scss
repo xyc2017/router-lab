@@ -1,6 +1,6 @@
 // $ is used when we create a variable in css
 
-$maincolor: blue;
+$maincolor:rgb(59, 59, 193);
 $contrastcolor: white;
 
 
@@ -10,7 +10,7 @@ $contrastcolor: white;
     background-color: $maincolor
 }
 
-nav{
+.nav{
     @include white-text-blue-bg();
     display:flex;
     justify-content: flex-start;

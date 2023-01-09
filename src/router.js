@@ -4,7 +4,7 @@ import About from './pages/about'
 import Home from './pages/home'
 import Price from './pages/price'
 import App from './App'
-import { priceLoader } from './loaders' 
+
 
 
 const router=createBrowserRouter(
@@ -21,7 +21,8 @@ const router=createBrowserRouter(
             <Route
                 path='stocks/:symbol'
                 element={<Price/>}
-                loader={priceLoader}/>
+                //loader={priceLoader}
+                />
             <Route
                 path='about'
                 element={<About/>}/>

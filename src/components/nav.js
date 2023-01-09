@@ -1,5 +1,6 @@
-import React from 'react'
+
 import {Link} from 'react-router-dom'   // element lets user nav to another page by clicking on a link
+
 
 const Nav=props=>{
     return (
