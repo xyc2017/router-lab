@@ -1,0 +1,24 @@
+// $ is used when we create a variable in css
+
+$maincolor: blue;
+$contrastcolor: white;
+
+
+// a collection of css block we can use later on, only used in sass
+@mixin white-text-blue-bg{
+    color: $contrastcolor;
+    background-color: $maincolor
+}
+
+nav{
+    @include white-text-blue-bg();
+    display:flex;
+    justify-content: flex-start;
+    a {
+        @include white-text-blue-bg;
+        div{
+            margin: 10px;
+            font-size: large;
+        }
+    }
+}
